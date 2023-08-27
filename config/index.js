@@ -1,8 +1,3 @@
-require('dotenv').config();
-const {PORT} = process.env
-const {PASSWORD} =  process.env
-
-console.log(PASSWORD)
-
-module.exports = PORT;
-module.exports = PASSWORD;
+import dotenv from "dotenv";
+dotenv.config();
+export const { PORT, USERNAME, PASSWORD, DEBUG_MODE, JWT_SECRET, REFRESH_SECRET, APP_URL } = process.env;

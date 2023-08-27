@@ -1,9 +1,15 @@
-const mongoose = require("mongoose");
-const {password} = require('../config');
+const mongoose = require('mongoose')
 
-// mongoose
-//   .connect(
-//     `mongodb+srv://deepakgoswami:${password}@cluster0.awhxeiv.mongodb.net/`
-//   )
-//   .then(() => console.log("connection established"))
-//   .catch((e) => console.log("connection error" + e));
+const url1 = "mongodb://localhost:27017/ecommerceApi";
+const url2 = "mongodb+srv://deepakgoswamiofficial:homxCttfCY3hUM5I@apnaid.fgtdgaf.mongodb.net/test";
+
+mongoose.connect(url1)
+.then(()=>{
+    console.log('Database connection established')
+})
+.catch((e)=>{
+    console.log(e)
+})
+
+
+
